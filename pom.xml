@@ -4,9 +4,43 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+    <!--    指定springboot依赖-->
+    <parent>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <groupId>org.springframework.boot</groupId>
+        <version>2.3.3.RELEASE</version>
+    </parent>
+
+    <!--    当前项目的信息-->
     <groupId>org.goodStudy</groupId>
     <artifactId>JavaStudy</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <name>GoodGoodStudy</name>
+    <description>good good study, day day up</description>
 
+    <!--    指定java 版本-->
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
 
+    <dependencies>
+        <!--        springboot自动配置-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+            <version>2.3.3.RELEASE</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+<!--        <plugins>-->
+<!--            <plugin>-->
+<!--                <groupId>org.springframework.boot</groupId>-->
+<!--                <artifactId>spring-boot-maven-plugin</artifactId>-->
+<!--                <configuration>-->
+<!--                    <fork>true</fork>-->
+<!--                </configuration>-->
+<!--            </plugin>-->
+<!--        </plugins>-->
+    </build>
 </project>
