@@ -30,9 +30,15 @@
             <artifactId>spring-boot-autoconfigure</artifactId>
             <version>2.3.3.RELEASE</version>
         </dependency>
+        <!--        web服务依赖包-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <!--        引入lombok开发工具包-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
         </dependency>
     </dependencies>
 
