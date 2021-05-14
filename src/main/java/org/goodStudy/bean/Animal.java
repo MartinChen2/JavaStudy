@@ -17,7 +17,9 @@ public class Animal {
     private String eat;
     private String run;
 
-    Animal(){
+    public Animal(){
+        eat = "eat";
+        run = "run";
         log.info("Animal 构造函数");
     }
 }
