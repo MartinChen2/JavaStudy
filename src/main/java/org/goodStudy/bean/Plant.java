@@ -19,4 +19,6 @@ public class Plant {
     Plant(){
         log.info("Plant 构造函数");
     }
+
+    String test;
 }
