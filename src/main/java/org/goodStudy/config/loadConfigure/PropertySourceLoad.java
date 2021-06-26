@@ -1,4 +1,4 @@
-package org.goodStudy.configure.loadConfigure;
+package org.goodStudy.config.loadConfigure;
 
 import lombok.Data;
 import org.springframework.beans.factory.annotation.Value;
@@ -14,7 +14,7 @@ import org.springframework.stereotype.Component;
  * @Version 1.0
  */
 @Component
-@PropertySource(value = "application.yaml")
+@PropertySource(value = "classpath:/test.properties")
 @Data
 public class PropertySourceLoad {
 

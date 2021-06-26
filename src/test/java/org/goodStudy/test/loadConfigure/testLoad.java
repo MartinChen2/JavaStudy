@@ -1,14 +1,16 @@
 package org.goodStudy.test.loadConfigure;
 
-import org.goodStudy.bean.Animal;
-import org.goodStudy.configure.loadConfigure.ConfigurationPropertiesLoad;
-import org.goodStudy.configure.loadConfigure.PropertySourceLoad;
-import org.goodStudy.configure.loadConfigure.VauleLoad;
+import org.goodStudy.JavaApplication;
+import org.goodStudy.config.loadConfigure.ConfigurationPropertiesLoad;
+import org.goodStudy.config.loadConfigure.PropertySourceLoad;
+import org.goodStudy.config.loadConfigure.VauleLoad;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.boot.test.context.TestConfiguration;
+import org.springframework.context.ApplicationContext;
+import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringRunner;
 
 /**
@@ -18,19 +20,32 @@ import org.springframework.test.context.junit4.SpringRunner;
  * @Date 2021/6/25 5:49 下午
  * @Version 1.0
  */
-@SpringBootTest
 @RunWith(SpringRunner.class)
+@SpringBootTest(classes = JavaApplication.class, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class testLoad {
 
     @Autowired
-    ConfigurableApplicationContext context;
+    ApplicationContext context;
+
+    @Autowired
+    ConfigurationPropertiesLoad configurationPropertiesLoad;
+
+    @Autowired
+    PropertySourceLoad propertySourceLoad;
+
+    @Autowired
+    VauleLoad vauleLoad;
 
     @Test
     public void test(){
+        String[] ayyry = {"ddd", "ddd"};
         System.out.println("context = " + context);
-        System.out.println(context.getBeanNamesForType(Animal.class));
-        System.out.println(context.getBeanNamesForType(VauleLoad.class));
-//        System.out.println(context.getBeansOfType(PropertySourceLoad.class));
+        System.out.println(configurationPropertiesLoad);
+        System.out.println(propertySourceLoad);
+        System.out.println(vauleLoad);
+
+        System.out.println("---------------------------");
+        System.out.println(context.getBean(PropertySourceLoad.class));
 //        System.out.println(context.getBeansOfType(ConfigurationPropertiesLoad.class));
     }
 }

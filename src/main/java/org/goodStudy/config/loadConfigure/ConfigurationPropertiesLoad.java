@@ -1,4 +1,4 @@
-package org.goodStudy.configure.loadConfigure;
+package org.goodStudy.config.loadConfigure;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;

@@ -5,6 +5,8 @@ import org.goodStudy.bean.Person;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.scheduling.annotation.EnableAsync;
+import org.springframework.scheduling.annotation.EnableScheduling;
 
 /**
  * @Author dingws
@@ -15,6 +17,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  */
 @SpringBootApplication
 @EnableAutoConfiguration
+@EnableScheduling
+@EnableAsync
 public class JavaApplication {
     public static void main(String[] args) {
         System.out.println("======main启动=======");
