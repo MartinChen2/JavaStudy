@@ -1,4 +1,4 @@
-package org.goodStudy.Util;
+package org.goodStudy.utils;
 
 import java.io.InputStream;
 

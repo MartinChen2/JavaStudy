@@ -1,10 +1,8 @@
 package org.goodStudy.test;
 
-import org.goodStudy.Util.RestTemplateUtils;
+import org.goodStudy.utils.RestTemplateUtils;
 import org.goodStudy.bean.Animal;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-import javax.annotation.Resource;
 
 /**
  * @Author dingws

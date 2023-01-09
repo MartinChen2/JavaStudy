@@ -1,7 +1,5 @@
-package org.goodStudy.Util;
+package org.goodStudy.utils;
 
-import com.alibaba.fastjson.JSONPObject;
-import org.apache.tomcat.util.json.JSONParser;
 import org.springframework.http.*;
 import org.springframework.http.client.SimpleClientHttpRequestFactory;
 import org.springframework.stereotype.Component;
